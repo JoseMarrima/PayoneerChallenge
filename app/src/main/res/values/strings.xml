@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PayoneerChallenge</string>
+    <string name="error_message">Something went wrong! \n Please try again later.</string>
 </resources>

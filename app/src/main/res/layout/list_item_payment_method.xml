@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="applicationItem"
             type="com.example.payoneerchallenge.model.ApplicableItem" />
@@ -12,10 +13,10 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:contentPadding="14dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp"
         android:layout_marginBottom="8dp"
+        app:contentPadding="14dp"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="1dp"
         tools:context=".ui.MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,12 +34,13 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/name_text_view"
-                style="@style/Widget.MaterialComponents.TextView"
+                style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="18dp"
-                android:textStyle="bold"
                 android:text="@{applicationItem.label}"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/logo_image_view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/logo_image_view"
